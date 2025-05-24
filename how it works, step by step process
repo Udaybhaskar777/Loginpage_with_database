@@ -1,0 +1,18 @@
+FIRST you can install XAMPP
+then start the aparche and MYSQL server in XAMPP
+next go to browser and search localhost/phpmyadmin
+  and there you can see the databases which is already existed then you can create a new database with the name of ecommerce
+then you can see the top of the browser structure , sql , and more 
+check on the the SQL and copy the this code as it is in the SQL box
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    role ENUM('user', 'admin') DEFAULT 'user'
+);
+
+then download our repositories and extract the zip file and open it on VS code
+ONCE if it all done ,switch off the xampp servers in your pc.
